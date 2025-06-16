@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/memorydb.iml" filepath="$PROJECT_DIR$/.idea/modules/memorydb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/memorydb.main.iml" filepath="$PROJECT_DIR$/.idea/modules/memorydb.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/memorydb.test.iml" filepath="$PROJECT_DIR$/.idea/modules/memorydb.test.iml" />
+    </modules>
+  </component>
+</project>
