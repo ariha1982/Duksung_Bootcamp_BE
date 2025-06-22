@@ -1,7 +1,7 @@
 package com.example.memorydb.user.service;
 
 import com.example.memorydb.user.model.UserEntity;
-import com.example.memorydb.user.UserRepository;
+import com.example.memorydb.user.db.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,15 +21,20 @@ public class UserService {
         return userRepository.findAll();
     }
 
-    public void delete(Long id) {
+    /*public void delete(Long id) {
         userRepository.delete(id);
-    }
+    }*/
 
     public Optional<UserEntity> findById(Long id) {
         return userRepository.findById(id);
     }
 
     public List<UserEntity> findByScore(int score) {
-        return userRepository.findByScore(score);
+        return userRepository.findAllByScoreGreaterThan(score);
+    }
+
+    public List<UserEntity> findByScore(int min, int max) {
+        return userRepository.score(min, max);
+        //return userRepository.findAllByScoreGreaterThanEqualAndScoreLessThanEqual(min, max);
     }
 }

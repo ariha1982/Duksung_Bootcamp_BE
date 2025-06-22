@@ -1,9 +1,5 @@
 package com.example.memorydb.config;
 
-import com.example.memorydb.user.UserRepository;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-
 /*@Configuration
 public class DataBaseConfig {
     @Bean

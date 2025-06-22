@@ -27,9 +27,9 @@ public class BookService {
     }
 
     //delete
-    public void delete(Long id){
+    /*public void delete(Long id){
         bookRepository.delete(id);
-    }
+    }*/
 
     //find one
     public Optional<BookEntity> findById(Long id) {
