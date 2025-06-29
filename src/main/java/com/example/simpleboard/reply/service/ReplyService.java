@@ -1,8 +1,10 @@
 package com.example.simpleboard.reply.service;
 
+import com.example.simpleboard.crud.CRUDAbstractService;
 import com.example.simpleboard.post.db.PostRepository;
 import com.example.simpleboard.reply.db.ReplyEntity;
 import com.example.simpleboard.reply.db.ReplyRepository;
+import com.example.simpleboard.reply.model.ReplyDTO;
 import com.example.simpleboard.reply.model.ReplyRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -12,8 +14,8 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class ReplyService {
-    private final ReplyRepository replyRepository;
+public class ReplyService extends CRUDAbstractService<ReplyDTO, ReplyEntity> {
+    /*private final ReplyRepository replyRepository;
     private final PostRepository postRepository;
 
     public ReplyEntity create(ReplyRequest replyRequest) {
@@ -38,5 +40,5 @@ public class ReplyService {
 
     public List<ReplyEntity> findAllByPostId(Long postId) {
         return replyRepository.findAllByPostIdAndStatusOrderByRepliedAtDesc(postId, "REGISTERED");
-    }
+    }*/
 }
