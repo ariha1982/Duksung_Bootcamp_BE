@@ -1,13 +1,13 @@
-package com.example.jpa;
+package com.example.simpleboard;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JpaApplication {
+public class SimpleBoardApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(JpaApplication.class, args);
+		SpringApplication.run(SimpleBoardApplication.class, args);
 	}
 
 }
